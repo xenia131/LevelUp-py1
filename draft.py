@@ -4,7 +4,7 @@ even = []
 #a = [int(x) for x in input().split()]
 for i in range(len(a)):
     t = int(a[i])
-    q += [t*t]
+    q.append(t*t)
     if t%2 ==0:
-        even += [t]
+        even.append(t)
 print(q, even, sep = '\n')
