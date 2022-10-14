@@ -1,8 +1,5 @@
 def sort(list):
     list = [input() for i in range(int(input()))]
-    if list == sorted(list):
-        return True
-    else: 
-        return False
+    return list == sorted(list) or list == reversed(list)
 
 print(sort(list))
