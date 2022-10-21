@@ -10,6 +10,7 @@ dct_1 = {
 sums = 0
 word = list(input().upper())
 
+
 for i in word:
     for k, v in dct_1.items():
         if i in v:
