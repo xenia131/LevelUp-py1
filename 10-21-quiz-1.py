@@ -9,9 +9,10 @@ dct = {
     "answer_1": a1,
     "answer_2": a2,
     "answer_3": a3
-}
+} 
+
 
 
 with open("quiz-json.json", 'w') as json_f:
-    answs = json.dump(dct, json_f)
+    answs = json.dump(dct, json_f, indent=4)
 
