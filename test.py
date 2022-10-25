@@ -1,9 +1,8 @@
-import tokenize
-import io 
-expr = []
-inp =  input()
-for t in tokenize.tokenize(io.BytesIO(bytes(inp, "utf-8")).readline):
-    if t.type in [2,54]:
-        expr.append(t.string)
-
-print(expr) 
+def normalize_url(url):
+    if url[:8] == 'https://':
+        return url
+    elif url[:7] == 'http://':
+        return 'https://' + url[7:]
+    else:
+        return 'https://' + url
+print(normalize_url('http://yandex.ru'))

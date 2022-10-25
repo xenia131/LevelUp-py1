@@ -18,6 +18,7 @@ if answers['answer_1'] == rights['answer_1']:
     score += 1
 if answers['answer_2'] == rights['answer_2']:
     score += 1
+if answers['answer_3'] == rights['answer_3']:
     score += 1
 
 print(score)
